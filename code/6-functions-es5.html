@@ -2,22 +2,22 @@
 
   // Functions are a way to store a re-usable snippet of code in a block which can
   // be run later. For example, this function would print the current time when invoked:
-  const printCurrentTime = () => {
-    const currentTime = new Date()
-    return currentTime.toLocaleTimeString()
-  }
+  var printCurrentTime = function printCurrentTime() {
+    var currentTime = new Date();
+    return currentTime.toLocaleTimeString();
+  };
 
   // Task 1: Invoke the printCurrentTime function inside a console.log():
-  console.log(printCurrentTime())
+  console.log(printCurrentTime());
 
   // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
 
-  const myName = (name) => {
-    console.log(name)
-  }
+  var myName = function myName(name) {
+    console.log(name);
+  };
 
-  myName("Anna")
-  myName("Anna")
+  myName("Anna");
+  myName("Anna");
 
   // Task 3: Write a function called `printGreeting`. When invoked using the examples
   // below, it should print "Hello Bob" or "Hello Sue":
@@ -25,12 +25,12 @@
   // printGreeting("Bob") // This should print "Hello Bob"
   // printGreeting("Sue") // This should print "Hello Sue"
 
-  const printGreeting = (name) => {
-    console.log(`Hello ${name}`)
-  }
+  var printGreeting = function printGreeting(name) {
+    console.log("Hello " + name);
+  };
 
-  printGreeting("Bob")
-  printGreeting("Sue")
+  printGreeting("Bob");
+  printGreeting("Sue");
 
   // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
   // so that it can be stored in a variable. See the example below to see how it should work.
@@ -41,12 +41,12 @@
   // const second = multiply(100, 4)
   // console.log(second) // this should print "400"
 
-  const multiply = (a, b) => {
-    return a * b
-  }
+  var multiply = function multiply(a, b) {
+    return a * b;
+  };
 
-  const result = multiply(5, 6)
-  console.log(result)
+  var result = multiply(5, 6);
+  console.log(result);
 
 
   // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
@@ -54,16 +54,16 @@
   // function. It should print "Go for a run!"
   //
 
-  const warmEnough = (currentTemperature) => {
+  var warmEnough = function warmEnough(currentTemperature) {
     if (currentTemperature > 10) {
-      return true
+      return true;
     } else {
-      return false
+      return false;
     }
-  }
+  };
 
   if (warmEnough(15)) {
-    console.log("Go for a run!")
+    console.log("Go for a run!");
   }
 
 
